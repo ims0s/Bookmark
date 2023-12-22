@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Google fonts  -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!-- main css  -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Bookmark</title>
+</head>
+<body>
+        <main class="container py-5 ">
+            <h1 class=" text-center w-fit-content mx-auto mb-5 position-relative ">Bookmark</h1>
+            <div class="interface text-center py-4">
+                <h2 class="w-fit-content text-center  mx-auto mb-3 fs-3 ">
+                    <i class="fa-solid fa-bookmark"></i>
+                    Bookmark your favorite sites
+                    <i class="fa-solid fa-bookmark"></i>
+                </h2>
+                <div class="forms">
+                    <div class="mb-3 text-start ">
+                        <label for="siteName" class="form-label text-capitalize ">
+                            <i class="fa-solid fa-book-bookmark pe-2"></i>
+                            Site name
+                        </label>
+                        <input type="text" id="siteName" placeholder="Bookmark Name" class="form-control">
+                    </div>
+                    <div class="mb-3 text-start ">
+                        <label for="siteUrl" class="form-label text-capitalize ">
+                            <i class="fa-solid fa-link pe-2"></i>
+                            Site url
+                        </label>
+                        <input type="url" id="siteUrl" placeholder="Website URL" class="form-control">
+                    </div>
+                    <button class="btn btn-danger px-5 py-2 " onclick="appendBookmark()">submit</button>
+                </div>
+            </div>
+            <div class="table-data py-4 ">
+                <table class="w-100 text-center bg-light py-2 rounded" >
+                    <thead>
+                        <tr>
+                            <th class="py-2">Index</th>
+                            <th>Website</th>
+                            <th>Visit</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </main>
+
+
+    <!-- font Awesome js  -->
+    <script src="https://kit.fontawesome.com/a625c9965c.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap js  -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <!-- main js  -->
+    <script src="./index.js"></script>
+</body>
+</html>
